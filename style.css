@@ -1,0 +1,75 @@
+body{
+    margin: 40px;
+    font-family: "raleway", sans-serif;
+}
+
+h1 h2 h3{
+    font-weight: bold;
+}
+
+/* Header */
+
+nav{
+    display: flex;
+    justify-content: space-between
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav li{
+    margin-left: 10px;
+}
+
+/* Section Filtres */
+
+#formulaire{
+    display: flex;
+    justify-content: left;
+}
+
+#Recherches_villes{
+    color: black;
+    font-weight: bold;
+}
+
+/* Ne marche pas */
+.fas_fa-star{
+    color: #0065FC;
+}
+
+/* Hébergements à Marseille */
+
+#conteneur1{
+    display: flex;
+    flex-flow:row wrap;
+    background-color: #F2F2F2;
+    
+}
+
+/* Ne marche pas */
+img #conteneur1{
+    width: 35%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+#conteneur2{
+    background-color: #F2F2F2;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* A decaler à gauche */
+footer ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-inline-start: 0px; 
+}
