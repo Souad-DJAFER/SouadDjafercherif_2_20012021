@@ -3,10 +3,9 @@ body{
     font-family: "raleway", sans-serif;
 }
 
-h1 h2 h3{
+h1 h2 h3 h4{
     font-weight: bold;
 }
-
 
 /* Header */
 
@@ -36,9 +35,19 @@ nav li{
     font-weight: bold;
 }
 
-/* Ne marche pas */
-.fas_fa-star{
+button{
+    color: white;
+    background-color: #0065FC;
+}
+
+/* Section Centre de Page */
+
+.fas.fa-star{
     color: #0065FC;
+}
+
+.fas.fa-star.color-gris{
+    color: grey;
 }
 
 /* Hébergements à Marseille */
@@ -50,12 +59,15 @@ nav li{
     
 }
 
-/* Ne marche pas */
-img #conteneur1{
-    width: 35%;
-    height: auto;
-    object-fit: cover;
+#conteneur1 > div{
+    max-width: 33.3%;
+    padding: 10px;
+}
 
+#conteneur1 > div img{ 
+    width: 70%;
+    height: 70px;
+    object-fit: cover;
 }
 
 #conteneur2{
@@ -70,7 +82,11 @@ footer{
 /* A decaler à gauche */
 footer ul{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     list-style: none;
     padding-inline-start: 0px; 
+}
+
+footer ul li{
+    width: 33.3%;
 }

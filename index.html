@@ -10,16 +10,15 @@
 
     <body>
     	<div id="bloc_page">   	
-				
-			
+
 <!-- Header -->
     	<header>
     		<nav>
 				<img src="projet2_reservia/images/logo/Reservia.svg" alt="Logo Reservia"/>
     			<ul>
-    				<li>Hébergements</li>
-    				<li>Activités</li>
-    				<li>S'inscrire</li>
+    				<li><a href="#hebergements">Hébergements</a></li>
+    				<li><a href="#activites">Activités</a></li>
+    				<li><strong>S'inscrire</strong></li>
     			</ul>
     		</nav>
     	</header>
@@ -30,103 +29,112 @@
  			<p>En plein centre ou en pleine nature</p>
 			 <!-- Ligne Formulaire -->
 			 <div id="formulaire">
-				<form>
 					<i class="fas fa-map-marker-alt"></i>
 					<input type="text" value="Marseille, France" id="Recherches_villes" name="Recherches_villes">
-					<div class="button">
-						<button type="submit">Rechercher</button>	
-					</div>
-				</form>
+					<button type="submit">Rechercher</button>	
 			 </div>
+			 <h4>Filtres</h4>
  		</section>
-
 
  <!-- Section 2 - Hébergements à Marseille et les plus populaires -->
  		<div id="centredepage">
-			<section1>
- 				<h2>Hébergements à Marseille</h2>
+			<section>
+ 				<h2 id="hebergements">Hébergements à Marseille</h2>
 				<div id="conteneur1">
 					<div id="Cannebière">
  						<img src="projet2_reservia/images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
 						<h3>Auberge La Cannebière</h3>
 						<p>Nuit à partir de 25€</p>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
+						<div>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star color-gris"></i>
+						</div>
 					</div>
 
 					<div id="Hotel du port">
 						<img src="projet2_reservia/images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
 						<h3>Hôtel du port</h3>
 						<p>Nuit à partir de 52€</p>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
+						<div>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
 					</div>
 
 					<div id="Hôtel Les mouettes">
 						<img src="projet2_reservia/images/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
 						<h3>Hôtel Les mouettes</h3>
 						<p>Nuit à partir de 76€</p>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
+						<div>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star color-gris"></i>
+						</div>
 					</div>
  					
 					<div id="Hôtel de la mer">
 						<img src="projet2_reservia/images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
 						<h3>Hôtel de la Mer</h3>
 						<p>Nuit à partir de 46€</p>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
+						<div>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star color-gris"></i>
+							<i class="fas fa-star color-gris"></i>
+						</div>
 					</div>
 					
 					<div id="Auberge Le panier">
 						<img src="projet2_reservia/images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le panier">
 						<h3>Auberge Le panier</h3>
 						<p>Nuit à partir de 23€</p>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
+						<div>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star color-gris"></i>
+						</div>
 					</div>
  					
 					<div id="Hôtel chez Amina">
 						<img src="projet2_reservia/images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
 						<h3>Hôtel chez Amina</h3>
 						<p>Nuit à partir de 96€</p>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					 </div>
+						<div>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</div>
+					 <h4>Afficher plus</h4>
 				</div>
-			</section1>
+			</section>
 
-			<section2>
+			<section>
 				<h2>Les plus populaires</h2>
 				<div id="conteneur2">
 					<img src="projet2_reservia/images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
  			<img src="projet2_reservia/images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
  			<img src="projet2_reservia/images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
-			</section2>
+			</sections>
 		</div>
 		
 
  <!-- Section 4 - Activités à Marseille -->
  		<section id="activites_marseille">
- 			<h2>Activités à Marseille</h2>
+ 			<h2 id="activites">Activités à Marseille</h2>
  			
  		</section>
 
