@@ -1,10 +1,10 @@
 body{
-    margin: 40px;
+    margin: 30px;
     font-family: "raleway", sans-serif;
 }
 
 h1 h2 h3 h4{
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 /* Header */
@@ -23,21 +23,81 @@ nav li{
     margin-left: 10px;
 }
 
+#linknav1{
+    text-decoration: none;
+    color: #0065FC;
+}
+
+#linknav2{
+    text-decoration: none;
+    color: black;
+}
+
+#linknav3{
+    text-decoration: none;
+    color: #0065FC;
+    font-weight: bolder;
+    
+}
+
 /* Section Filtres */
+
+/* Formulaire */
 
 #formulaire{
     display: flex;
     justify-content: left;
 }
 
+.fas.fa-map-marker-alt{
+    background-color: #F2F2F2;
+    border-radius: 1em 0 0 1em;
+    margin-right: 0;
+    width: 20px;
+    padding-block: 0,5px;
+}
+
 #Recherches_villes{
     color: black;
     font-weight: bold;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 button{
     color: white;
     background-color: #0065FC;
+    border-radius: 0 1em 1em 0;
+    margin-left: 0;
+}
+
+/* Filtres */
+
+#filtres{
+    display: flex;
+    flex-direction: row;
+}
+
+.filtres > .fas{
+    color: #0065FC;
+    
+}
+
+.filtres > p {
+    font-weight: bolder;
+}
+
+#child{
+    display: flex;
+    flex-direction: row;
+    color: #0065FC;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+#wavemoney{
+    color: #0065FC;
+    background-color: grey;
 }
 
 /* Section Centre de Page */
@@ -52,31 +112,103 @@ button{
 
 /* Hébergements à Marseille */
 
-#conteneur1{
+/* Section centre de page */
+
+#centredepage{
     display: flex;
-    flex-flow:row wrap;
+}
+
+/* Conteneur 1 */
+
+#conteneur1{
     background-color: #F2F2F2;
-    
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    max-width: 66%; 
+    padding: 20px 20px 20px 20px;
 }
 
-#conteneur1 > div{
-    max-width: 33.3%;
-    padding: 10px;
+#flexbox1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-#conteneur1 > div img{ 
-    width: 70%;
-    height: 70px;
+#flexbox1 > article{
+    background-color: white;
+    width: 220px;
+    height: auto;
+    padding: 5px;
+    margin-bottom: 40px;
+    border-radius: 1em;
+    max-width: 33,3%;
+}
+
+#flexbox1 > article img{ 
+    width: 220px;
+    height: 100px;
     object-fit: cover;
+    border-radius: 1em 1em 0 0;
 }
+
+.nom_hotel{
+    font-size: 0.8em;
+    font-weight: 900;
+}
+
+.clickable {
+    color: black;
+    text-decoration: none;
+}
+
+/* Conteneur 2 */
 
 #conteneur2{
     background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    padding: 20px 20px 20px 20px;
+    margin-left: 30px;
+    width: 310px;
+}
+
+#flexbox2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#flexbox2 > article{
+    background-color: white;
+    width: 290px;
+    height: 100px;
+    padding: 5px;
+    margin-bottom: 40px;
+    border-radius: 1em;
+    max-width: 33,3%;
+    display: flex;
+    flex-direction: row;
+}
+
+#flexbox2 > article img{  
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 1em 0 0 1em;
+}
+
+#flexbox2 > article p{
+    font-size: 00.8em;
 }
 
 footer{
     display: flex;
     justify-content: space-around;
+    background-color: #F2F2F2; 
 }
 
 /* A decaler à gauche */
@@ -85,6 +217,8 @@ footer ul{
     flex-direction: row;
     list-style: none;
     padding-inline-start: 0px; 
+    width: 100%;
+    }
 }
 
 footer ul li{
