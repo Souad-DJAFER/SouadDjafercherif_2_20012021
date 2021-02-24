@@ -49,26 +49,47 @@ nav li{
     justify-content: left;
 }
 
+#recherche > h1{
+margin-bottom: 0px;
+font-size: 1.2em;
+font-weight: bold;
+}
+
+#recherche > p{
+    margin-top: 9px;
+    font-size: 1em;
+}
+    
 .fas.fa-map-marker-alt{
     background-color: #F2F2F2;
     border-radius: 1em 0 0 1em;
     margin-right: 0;
-    width: 20px;
-    padding-block: 0,5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #Recherches_villes{
     color: black;
-    font-weight: bold;
+    font-size: 1em;
     margin-left: 0;
     margin-right: 0;
+    border: solid #F2F2F2 1px;
+    height: 36px;
+    padding-left: 15px;
+    width: 190px;
 }
 
 button{
     color: white;
     background-color: #0065FC;
     border-radius: 0 1em 1em 0;
+    border-style: none;
     margin-left: 0;
+    height: 40px;
+    width: 110px;
 }
 
 /* Filtres */
@@ -76,28 +97,37 @@ button{
 #filtres{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
 }
 
-.filtres > .fas{
-    color: #0065FC;
-    
+.filtres{
+    display: flex;
 }
 
-.filtres > p {
-    font-weight: bolder;
-}
-
-#child{
+.icones{
     display: flex;
     flex-direction: row;
-    color: #0065FC;
-    background-color: grey;
-    border-radius: 50%;
 }
 
-#wavemoney{
+.icones > .fas{
     color: #0065FC;
-    background-color: grey;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones > p {
+    color: black;
+    font-weight: bolder;
+    border-radius: 0 1px 1px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Section Centre de Page */
@@ -116,6 +146,7 @@ button{
 
 #centredepage{
     display: flex;
+    flex-direction: row;
 }
 
 /* Conteneur 1 */
@@ -154,8 +185,11 @@ button{
 }
 
 .nom_hotel{
-    font-size: 0.8em;
-    font-weight: 900;
+    font-size: 1em;
+    font-weight: bolder;
+    margin-top: 2px;
+    margin-left: 8px;
+    margin-bottom: 2px;
 }
 
 .clickable {
@@ -167,20 +201,22 @@ button{
 
 #conteneur2{
     background-color: #F2F2F2;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     border-radius: 1em;
     padding: 20px 20px 20px 20px;
     margin-left: 30px;
     width: 310px;
 }
 
+.clickable2{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
 #flexbox2{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 #flexbox2 > article{
@@ -191,8 +227,6 @@ button{
     margin-bottom: 40px;
     border-radius: 1em;
     max-width: 33,3%;
-    display: flex;
-    flex-direction: row;
 }
 
 #flexbox2 > article img{  
@@ -202,8 +236,29 @@ button{
     border-radius: 1em 0 0 1em;
 }
 
-#flexbox2 > article p{
+.populaires{
+    display: flex;
+    flex-direction: column;
+}
+
+.populaires > h4{
+    font-size: 1em;
+    font-weight: bolder;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 5px;
+}
+
+.populaires > p{
+    margin-top: 1px;
+    margin-left: 5px;
+    margin-bottom: 25px;
     font-size: 00.8em;
+}
+
+.nom_hotel2{
+    font-size: 1em;
+    font-weight: bolder;
 }
 
 #conteneurbottom{
@@ -230,7 +285,6 @@ footer ul{
     padding-inline-start: 0px; 
     width: 100%;
     }
-}
 
 footer ul li{
     width: 33.3%;
