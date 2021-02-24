@@ -47,6 +47,7 @@ nav li{
 #formulaire{
     display: flex;
     justify-content: left;
+    margin-bottom: 30px;
 }
 
 #recherche > h1{
@@ -94,7 +95,7 @@ button{
 
 /* Filtres */
 
-#filtres{
+#box_filtres{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -102,11 +103,18 @@ button{
 
 .filtres{
     display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: 20px;
 }
 
 .icones{
     display: flex;
     flex-direction: row;
+    border: solid #F2F2F2 2px;
+    width: auto;
+    height: 30px;
+    border-radius: 1em 1em 1em 1em;
 }
 
 .icones > .fas{
@@ -124,7 +132,10 @@ button{
     color: black;
     font-weight: bolder;
     border-radius: 0 1px 1px 0;
+    border-color: solid #F2F2F2 2px;
     display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
