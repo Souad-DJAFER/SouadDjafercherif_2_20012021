@@ -23,21 +23,17 @@ nav li{
     margin-left: 10px;
 }
 
-#linknav1{
-    text-decoration: none;
-    color: #0065FC;
-}
-
-#linknav2{
-    text-decoration: none;
+nav li a{
     color: black;
+    text-decoration: none;
 }
 
-#linknav3{
-    text-decoration: none;
+.bluetext{
     color: #0065FC;
-    font-weight: bolder;
-    
+}
+
+.boldtext{
+    font-weight: bold;
 }
 
 /* Section Filtres */
@@ -107,9 +103,10 @@ button{
     flex-direction: row;
     align-items: baseline;
     margin-left: 20px;
+    cursor: pointer;
 }
 
-.icones{
+.icones {
     display: flex;
     flex-direction: row;
     border: solid #F2F2F2 2px;
@@ -117,6 +114,8 @@ button{
     height: 30px;
     border-radius: 1em 1em 1em 1em;
 }
+
+/* AJOUTER HOVER sur les filtres */
 
 .icones > .fas{
     color: #0065FC;
@@ -293,6 +292,48 @@ button{
     align-items: center;
 }
 
+/* Activités à Marseille */
+
+#activites{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+}
+
+.blockcolumn > a{
+    display: flex  ;    
+    flex-direction: column;
+}
+
+.blockcolumn > a img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+}
+
+.blockrow > a{
+    display: flex  ;    
+    flex-direction: column;
+}
+
+.blockrow > a img{
+    width: 200px;
+    height: 130px;
+    object-fit: cover;
+}
+
 
 /* Footer */
 
@@ -302,6 +343,8 @@ footer{
     justify-content: left;
     background-color: #F2F2F2;
     max-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .column_footer{

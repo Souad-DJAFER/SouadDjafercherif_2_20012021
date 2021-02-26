@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/26c6410359.js" crossorigin="anonymous"></script>
         <title>RESERVIA</title>
     </head>
@@ -16,9 +17,9 @@
     		<nav class="activ">
 				<img src="projet2_reservia/images/logo/Reservia.svg" alt="Logo Reservia"/>
     			<ul >
-    				<li><a id="linknav1" href="#hebergements">Hébergements</a></li>
-    				<li><a id="linknav2" href="#activites">Activités</a></li>
-    				<li id="linknav3">S'inscrire</li>
+    				<li><a class="bluetext" href="#hebergements">Hébergements</a></li>
+    				<li><a href="#activites">Activités</a></li>
+    				<li><a class="bluetext boldtext" href="#">S'inscrire</a></li>
     			</ul>
     		</nav>
     	</header>
@@ -96,18 +97,18 @@
 						</article>
 					
 						<article id="Hotel du port">
-						<a class="clickable" href="page_hotel_port">
-							<img src="projet2_reservia/images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
-							<h4 class="nom_hotel1">Hôtel du port<h4>
-							<p>Nuit à partir de 52€</p>
-							<div>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-							</div>
-						</a>	
+							<a class="clickable" href="page_hotel_port">
+								<img src="projet2_reservia/images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
+								<h4 class="nom_hotel1">Hôtel du port<h4>
+								<p>Nuit à partir de 52€</p>
+								<div>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</a>	
 						</article>
 				
 						<article id="Hôtel Les mouettes">
@@ -238,69 +239,82 @@
 		
 
  <!-- Section 4 - Activités à Marseille -->
- 		<section id="activites_marseille">
- 			<h2 id="activites">Activités à Marseille</h2>
-				<div id="box_activites">
-					<div>
+
+ <h2>Activités à Marseille</h2>
+ 		<section id="activites">
+			<div class="column">
+				<div class="blockcolumn">
+						<a class="clickable2" href="page_port">
 						<img src="projet2_reservia/images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux_Port">
 						<h4>Vieux Port</h4>
-					</div>
+						</a>
+				</div>
+			</div>
 
-					<div>
+			<div class="row">
+				<div class="blockrow">
+						<a class="clickable2" href="page_pomegues">
 						<img src="projet2_reservia/images/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
 						<h4>Fort de Pomègues</h4>
-					</div>
 
-					<div>
+						<a class="clickable2" href="page_frioul">
 						<img src="projet2_reservia/images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles_du_Frioul">
 						<h4>Iles du Frioul</h4>
-					</div>	
+						</a>
+				</div>
+			</div>
 
-					<div>
+			<div class="column">
+				<div class="blockcolumn">
+						<a class="clickable2" href="page_calanques">
 						<img src="projet2_reservia/images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc_National_des_Calanques">
 						<h4>Parc National des Calanques</h4>
-					</div>
+						</a>
+				</div>
+			</div>
 
-					<div>
+			<div class="row">
+				<div class="blockrow">
+						<a class="clickable2" href="page_notredame">
 						<img src="projet2_reservia/images/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre_Dame_de_la_Garde">
 						<h4>Notre-Dame-de-la-Garde</h4>
-					</div>
+						</a>
 
-					</div>
+						<a class="clickable2" href="page_longchamp">
 						<img src="projet2_reservia/images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc_Longchamp">
 						<h4>Parc Longchamp</h4>
-					</div>
+						</a>
+				</div>
 			</div>
  		</section>
-
-
-    	<footer>
-    		<div class="column_footer">
-    			<h3>A propos</h3>
-    				<ul>
-    					<li>Fonctionnement du site</li>
-    					<li>Conditions générales de vente</li>
-    					<li>Données et confidentialités</li>
-    				</ul>
-    		</div>
-
-    		<div class="column_footer">
-    			<h3>Nos hébergements</h3>
-    				<ul>
-    					<li>Charte qualité</li>
-    					<li>Soumettre votre hôtel</li>
-    				</ul>
-    		</div>
-
-    		<div class="column_footer">
-    			<h3>Assistance</h3>
-    				<ul>
-    					<li>Centre d'aide</li>
-    					<li>Nous contacter</li>
-    				</ul>
-    		</div>
-    	</footer>
-    
-    	</div>
     </body>
+
+	<!-- Footer -->
+
+	<footer>
+		<div class="column_footer">
+			<h3>A propos</h3>
+				<ul>
+					<li>Fonctionnement du site</li>
+					<li>Conditions générales de vente</li>
+					<li>Données et confidentialités</li>
+				</ul>
+		</div>
+
+		<div class="column_footer">
+			<h3>Nos hébergements</h3>
+				<ul>
+					<li>Charte qualité</li>
+					<li>Soumettre votre hôtel</li>
+				</ul>
+		</div>
+
+		<div class="column_footer">
+			<h3>Assistance</h3>
+				<ul>
+					<li>Centre d'aide</li>
+					<li>Nous contacter</li>
+				</ul>
+		</div>
+	</footer>
 </html>
