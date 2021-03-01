@@ -115,8 +115,6 @@ button{
     border-radius: 1em 1em 1em 1em;
 }
 
-/* AJOUTER HOVER sur les filtres */
-
 .icones > .fas{
     color: #0065FC;
     background-color: #DEEBFF;
@@ -139,6 +137,18 @@ button{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.fas.fa-money-bill-wave{
+    font-size: 800;
+}
+
+#icone_information{
+    background-color: #0065FC;
+    color: white;
+    margin-right: 10px;
+    border-radius: 50%;
+    border-color: solid #DEEBFF 2px;
 }
 
 #information{
@@ -326,6 +336,7 @@ button{
 .blockrow > a{
     display: flex  ;    
     flex-direction: column;
+    border-radius: 1em;
 }
 
 .blockrow > a img{
@@ -333,7 +344,6 @@ button{
     height: 130px;
     object-fit: cover;
 }
-
 
 /* Footer */
 
