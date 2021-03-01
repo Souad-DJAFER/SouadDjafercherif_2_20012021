@@ -164,16 +164,6 @@ button{
     border-color: tomato;
 }
 
-/* Section Centre de Page */
-
-.fas.fa-star{
-    color: #0065FC;
-}
-
-.fas.fa-star.color-gris{
-    color: grey;
-}
-
 /* Hébergements à Marseille */
 
 /* Section centre de page */
@@ -181,6 +171,14 @@ button{
 #centredepage{
     display: flex;
     flex-direction: row;
+}
+
+.fas.fa-star{
+    color: #0065FC;
+}
+
+.fas.fa-star.color-gris{
+    color: grey;
 }
 
 /* Conteneur 1 */
