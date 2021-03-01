@@ -1,4 +1,4 @@
-body{
+#blockpage{
     margin: 30px;
     font-family: "raleway", sans-serif;
 }
@@ -308,12 +308,14 @@ button{
     display: flex;
     flex-direction: row;
     max-width: 100%;
+    justify-content: space-between;
 }
 
 .column{
     display: flex;
     flex-direction: column;
     max-width: 25%;
+    box-shadow: 4px 4px 2px #F2F2F2;
 }
 
 .blockcolumn > a{
@@ -351,10 +353,9 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: left;
+    font-family: "raleway", sans-serif;
     background-color: #F2F2F2;
     max-width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
 .column_footer{
