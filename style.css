@@ -1,4 +1,9 @@
-#blockpage{
+html{
+    width: auto;
+}
+
+
+main{
     margin: 30px;
     font-family: "raleway", sans-serif;
 }
@@ -38,7 +43,7 @@ nav li a{
 
 /* Section Filtres */
 
-/* Formulaire */
+    /* Formulaire */
 
 #formulaire{
     display: flex;
@@ -89,13 +94,14 @@ button{
     width: 110px;
 }
 
-/* Filtres */
+    /* Filtres */
 
 #box_filtres{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: baseline;
+    width: 100%;
 }
 
 .filtres{
@@ -133,11 +139,11 @@ button{
     border-radius: 0 1px 1px 0;
     border-color: solid #F2F2F2 2px;
     display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .fas.fa-money-bill-wave{
@@ -145,11 +151,12 @@ button{
 }
 
 #icone_information{
+    font-size: 18px;
     background-color: #0065FC;
     color: white;
     margin-right: 10px;
+    border: 2px #F2F2F2 solid;
     border-radius: 50%;
-    border-color: solid #DEEBFF 2px;
 }
 
 #information{
@@ -158,16 +165,10 @@ button{
     align-items: baseline;
 }
 
-/* Trouver solution pour changer l'icone*/
-
-#information > i.fas.fa-info-circle{
-    background-color: white;
-    border-color: tomato;
-}
 
 /* Hébergements à Marseille */
 
-/* Section centre de page */
+    /* Section centre de page */
 
 #centredepage{
     display: flex;
@@ -182,7 +183,7 @@ button{
     color: grey;
 }
 
-/* Conteneur 1 */
+    /* Conteneur 1 */
 
 #conteneur1{
     background-color: #F2F2F2;
@@ -208,6 +209,7 @@ button{
     margin-bottom: 40px;
     border-radius: 1em;
     max-width: 33,3%;
+    box-shadow: 1px 1px 12px rgb(197, 197, 197);
 }
 
 #flexbox1 > article img{ 
@@ -230,7 +232,7 @@ button{
     text-decoration: none;
 }
 
-/* Conteneur 2 */
+    /* Conteneur 2 */
 
 #conteneur2{
     background-color: #F2F2F2;
@@ -260,6 +262,7 @@ button{
     margin-bottom: 40px;
     border-radius: 1em;
     max-width: 33,3%;
+    box-shadow: 1px 1px 12px rgb(197, 197, 197);
 }
 
 #flexbox2 > article img{  
@@ -306,31 +309,38 @@ button{
 #activites{
     display: flex;
     flex-direction: row;
-    max-width: 100%;
     justify-content: space-between;
+    max-width: 100%;
 }
+
+/* Une seule carte */
 
 .column{
     display: flex;
     flex-direction: column;
     max-width: 25%;
-    box-shadow: 4px 4px 2px #F2F2F2;
 }
 
 .blockcolumn > a{
     display: flex  ;    
     flex-direction: column;
+    box-shadow: 1px 1px 12px rgb(197, 197, 197);
+    border-radius: 1em;
 }
 
 .blockcolumn > a img{
-    width: 200px;
-    height: 300px;
+    width: 250px;
+    height: 310px;
     object-fit: cover;
+    border-radius: 1em 1em 0 0;
 }
+
+/* Deux cartes */
 
 .row{
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
     max-width: 25%;
 }
 
@@ -338,29 +348,47 @@ button{
     display: flex  ;    
     flex-direction: column;
     border-radius: 1em;
+    color: black;
+    text-decoration: none;
+    box-shadow: 4px 4px 6px #F2F2F2;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 12px rgb(197, 197, 197);
 }
 
-.blockrow > a img{
-    width: 200px;
-    height: 130px;
+.blockrow > .clickable3 img{
+    width: 250px;
+    height: 90px;
     object-fit: cover;
+    border-radius: 1em 1em 0 0;
 }
 
+.blockrow > .clickable4 img{
+    width: 250px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+}
+
+h5{
+    margin : 20px 0 20px 10px;
+    font-size: 1em;
+}
 /* Footer */
 
 footer{
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: flex-start;
     font-family: "raleway", sans-serif;
     background-color: #F2F2F2;
-    max-width: 100%;
+    width: 100%;
 }
 
 .column_footer{
     display: flex;
     flex-direction: column;
-    width: 33.3%;
+    justify-content: space-between;
+    max-width: 33.3%;
     padding-left: 20px;
 }
 
