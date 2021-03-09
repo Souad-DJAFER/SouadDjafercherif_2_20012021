@@ -406,6 +406,7 @@ h5{
     margin : 20px 0 20px 10px;
     font-size: 1em;
 }
+
 /* Footer */
 
 footer{
@@ -782,36 +783,41 @@ button{
     align-items: center;
 }
 
-
 #conteneurbottom > .fas.fa-chart-line{
     font-size: 1.6em;
 }
 
 /* Activités à Marseille */
 
+#h2_activites{
+    margin-left: 20px;
+}
+
 #activites{
     display: flex;
     flex-direction: column;
-    width: auto;
+    max-width: 100%;
 }
 
 /* Une seule carte */
 
 .column{
-    width: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
     padding: 15px;
 }
 
 .blockcolumn > a{
+    display: flex  ;    
+    flex-direction: column;
     box-shadow: 1px 1px 12px rgb(197, 197, 197);
     border-radius: 1em;
-    width: auto;
-    height: auto;
 }
 
 .blockcolumn > a img{
     width: 100%;
-    height: 310px;
+    height: 130px;
     object-fit: cover;
     border-radius: 1em 1em 0 0;
 }
@@ -819,11 +825,16 @@ button{
 /* Deux cartes */
 
 .row{
-    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    max-width: 100%;
     padding: 15px;
 }
 
 .blockrow > a{
+    display: flex  ;    
+    flex-direction: column;
     border-radius: 1em;
     color: black;
     text-decoration: none;
@@ -834,14 +845,14 @@ button{
 
 .blockrow > .clickable3 img{
     width: 100%;
-    height: 90px;
+    height: 130px;
     object-fit: cover;
     border-radius: 1em 1em 0 0;
 }
 
 .blockrow > .clickable4 img{
     width: 100%;
-    height: 120px;
+    height: 130px;
     object-fit: cover;
     border-radius: 1em 1em 0 0;
 }
@@ -851,21 +862,35 @@ h5{
     font-size: 1em;
 }
 
-/* Footer */
 
-footer{
-    display: flex;
-    flex-direction: column;
-    font-family: "raleway", sans-serif;
-    background-color: #F2F2F2;
-}
+    /* Footer */
 
-.column_footer{
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    width: auto;
-}
+    footer{
+        display: flex;
+        flex-direction: column;
+        font-family: "raleway", sans-serif;
+        background-color: #F2F2F2;
+        width: 100%;
+    }
+    
+    .column_footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 20px;
+    }
+    
+    footer ul{
+        list-style: none; 
+        margin-top: 0px;
+        padding-left: 0px;
+        }
+    
+    ul > li{
+        margin-bottom: 10px;
+    }
+    
+
 
      /* Version Paysage */
 
