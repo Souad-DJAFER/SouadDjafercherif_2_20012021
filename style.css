@@ -1,6 +1,7 @@
 body, html{
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 main{
@@ -228,17 +229,28 @@ button{
     border-radius: 1em 1em 0 0;
 }
 
-.nom_hotel{
+.nom_hotel1{
     font-size: 1em;
     font-weight: bolder;
-    margin-top: 2px;
-    margin-left: 8px;
-    margin-bottom: 2px;
+    margin: 3px 0px 3px 8px;
 }
 
 .clickable {
     color: black;
     text-decoration: none;
+}
+
+.clickable > p{
+    margin: 4px 0px 4px 8px;
+}
+
+.etoiles{
+    margin: 4px 0px 4px 8px;
+}
+
+#conteneur1 h4{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
     /* Conteneur 2 */
@@ -266,7 +278,7 @@ button{
 #flexbox2 > article{
     background-color: white;
     width: 290px;
-    height: 100px;
+    height: 125px;
     padding: 5px;
     margin-bottom: 40px;
     border-radius: 1em;
@@ -276,9 +288,10 @@ button{
 
 #flexbox2 > article img{  
     width: 100px;
-    height: 100px;
+    height: 125px;
     object-fit: cover;
     border-radius: 1em 0 0 1em;
+    margin-right: 15px;
 }
 
 .populaires{
@@ -289,7 +302,7 @@ button{
 .populaires > h4{
     font-size: 1em;
     font-weight: bolder;
-    margin-top: 1px;
+    margin-top: 5px;
     margin-bottom: 1px;
     margin-left: 5px;
 }
@@ -304,6 +317,11 @@ button{
 .nom_hotel2{
     font-size: 1em;
     font-weight: bolder;
+}
+
+.etoiles2{
+    margin-top: 16px;
+    margin-bottom: 5px;
 }
 
 #conteneurbottom{
@@ -328,7 +346,7 @@ button{
     display: flex;
     flex-direction: column;
     max-width: 25%;
-    padding: 5px;
+    padding: 15px;
 }
 
 .blockcolumn > a{
@@ -352,7 +370,7 @@ button{
     flex-direction: column;
     align-content: flex-start;
     max-width: 25%;
-    padding: 5px;
+    padding: 15px;
 }
 
 .blockrow > a{
@@ -410,5 +428,417 @@ footer ul{
 
 ul > li{
     margin-bottom: 10px;
+}
+
+
+/* RESOLUTION TABLETTE */
+
+@media screen 
+    and (min-width : 768px) and (max-width : 1023px) 
+{
+    body{
+        width: auto;
+        background-color: red;
+    }  
+    header{
+        display: inline-block;
+        flex-direction: ;
+    }
+}
+
+
+/* RESOLUTION PORTABLE */
+
+@media screen 
+    and (min-width : 320px) and (max-width : 767px)  
+{
+
+    html{
+        display: flex;
+        width: 100%;
+        background-color: green;
+        margin: 0;
+    }
+
+    body{
+        width: auto;
+    }
+
+/* Header */
+
+nav{
+    display: flex;
+    justify-content: space-between
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav li{
+    margin-left: 50px;
+}
+
+nav li a{
+    color: black;
+    text-decoration: none;
+}
+
+/* Section Filtres */
+
+    /* Formulaire */
+
+#formulaire{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: auto;
+}
+    
+.fas.fa-map-marker-alt{
+    background-color: #F2F2F2;
+    border-radius: 1em 0 0 1em;
+    margin-right: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Recherches_villes{
+    color: black;
+    font-size: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    border: solid #F2F2F2 1px;
+    height: 36px;
+    padding-left: 15px;
+    width: 190px;
+}
+
+button{
+    color: white;
+    background-color: #0065FC;
+    border-radius: 0 1em 1em 0;
+    border-style: none;
+    margin-left: 0;
+    height: 40px;
+    width: 110px;
+}
+
+    /* Filtres */
+
+#box_filtres{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: auto;
+}
+
+.filtres{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.icones {
+    display: flex;
+    flex-direction: row;
+    border: solid #F2F2F2 2px;
+    width: auto;
+    height: 30px;
+    border-left: none;
+    border-radius: 1em 1em 1em 1em;
+}
+
+.icones > .fas{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones > p {
+    color: black;
+    font-weight: bolder;
+    border-radius: 0 1px 1px 0;
+    border-color: solid #F2F2F2 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.fas.fa-money-bill-wave{
+    font-size: 800;
+}
+
+#information{
+    border: 2px #F2F2F2 solid;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#icone_information{
+    color: #0065FC;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center
+}
+
+#petite_phrase{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+
+/* Hébergements à Marseille */
+
+    /* Section centre de page */
+
+#centredepage{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.fas.fa-star{
+    color: #0065FC;
+}
+
+.fas.fa-star.color-gris{
+    color: grey;
+}
+
+#centredepage{
+    width: 100%;
+}
+
+    /* Conteneur 1 */
+
+#conteneur1{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1em;
+    width: auto;
+}
+
+#flexbox1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#flexbox1 > article{
+    background-color: white;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    margin-bottom: 40px;
+    border-radius: 1em;
+    box-shadow: 1px 1px 12px rgb(197, 197, 197);
+}
+
+#flexbox1 > article img{ 
+    width: 220px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+}
+
+
+    /* Conteneur 2 */
+
+#conteneur2{
+    background-color: #F2F2F2;
+    border-radius: 1em;
+    padding: 20px 20px 20px 20px;
+}
+
+#flexbox2{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.clickable2{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#flexbox2 > article{
+    background-color: white;
+    width: 290px;
+    height: 125px;
+    padding: 5px;
+    margin-bottom: 40px;
+    border-radius: 1em;
+    max-width: 33,3%;
+    box-shadow: 1px 1px 12px rgb(197, 197, 197);
+}
+
+#flexbox2 > article img{  
+    width: 100px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 1em 0 0 1em;
+    margin-right: 15px;
+}
+
+.populaires{
+    display: flex;
+    flex-direction: column;
+}
+
+.populaires > h4{
+    font-size: 1em;
+    font-weight: bolder;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    margin-left: 5px;
+}
+
+.populaires > p{
+    margin-top: 1px;
+    margin-left: 5px;
+    margin-bottom: 25px;
+    font-size: 00.8em;
+}
+
+.nom_hotel2{
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.etoiles2{
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+
+#conteneurbottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Activités à Marseille */
+
+#activites{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+/* Une seule carte */
+
+.column{
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    padding: 15px;
+}
+
+.blockcolumn > a{
+    display: flex  ;    
+    flex-direction: column;
+    box-shadow: 1px 1px 12px rgb(197, 197, 197);
+    border-radius: 1em;
+}
+
+.blockcolumn > a img{
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+}
+
+/* Deux cartes */
+
+.row{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    max-width: 25%;
+    padding: 15px;
+}
+
+.blockrow > a{
+    display: flex  ;    
+    flex-direction: column;
+    border-radius: 1em;
+    color: black;
+    text-decoration: none;
+    box-shadow: 4px 4px 6px #F2F2F2;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 12px rgb(197, 197, 197);
+}
+
+.blockrow > .clickable3 img{
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+}
+
+.blockrow > .clickable4 img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+}
+
+h5{
+    margin : 20px 0 20px 10px;
+    font-size: 1em;
+}
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    font-family: "raleway", sans-serif;
+    background-color: #F2F2F2;
+}
+
+.column_footer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    width: auto;
+}
+
+     /* Version Paysage */
+
+@media (max-device-width:767px) and (orientation: landscape) {
+        html {
+         -webkit-text-size-adjust: 100%;
+         -ms-text-size-adjust: 100%;
+        }
+      }
 }
 
