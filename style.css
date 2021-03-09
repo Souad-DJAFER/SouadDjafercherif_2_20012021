@@ -331,6 +331,10 @@ button{
     align-items: center;
 }
 
+#conteneurbottom > .fas.fa-chart-line{
+    font-size: 1.6em;
+}
+
 /* Activités à Marseille */
 
 #activites{
@@ -778,8 +782,9 @@ button{
     align-items: center;
 }
 
+
 #conteneurbottom > .fas.fa-chart-line{
-    
+    font-size: 1.6em;
 }
 
 /* Activités à Marseille */
