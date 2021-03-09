@@ -453,31 +453,49 @@ ul > li{
     and (min-width : 320px) and (max-width : 767px)  
 {
 
-    html{
+html{
         display: flex;
         width: 100%;
-        background-color: green;
         margin: 0;
     }
 
-    body{
-        width: auto;
-    }
+body{
+    width: auto;
+}
 
+main{
+    margin: 0;
+}
 /* Header */
 
 nav{
     display: flex;
-    justify-content: space-between
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 nav ul{
-    display: flex;
     list-style: none;
+    padding: 0px;
+}
+
+.nav3{
+    color:red;
+    margin-left: 6px;
+    padding-left: 2px;
+    order: 1;
+}
+
+.nav1{
+    order: 2;
+}
+
+.nav2{
+    order: 3;
 }
 
 nav li{
-    margin-left: 50px;
+    margin-left: 0px;
 }
 
 nav li a{
@@ -485,15 +503,28 @@ nav li a{
     text-decoration: none;
 }
 
+
 /* Section Filtres */
 
     /* Formulaire */
 
+
+#recherche{
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#recherche > h1{
+    font-size: 1.5em;
+}
+
 #formulaire{
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     width: auto;
+    margin-top: 35px;
 }
     
 .fas.fa-map-marker-alt{
@@ -531,12 +562,13 @@ button{
     /* Filtres */
 
 #box_filtres{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     flex-wrap: wrap;
-    align-items: baseline;
     width: auto;
+}
+
+#box_filtres > h4{
+    display: inline-block;
+    width: 100%;
 }
 
 .filtres{
@@ -544,8 +576,10 @@ button{
     flex-direction: row;
     align-items: baseline;
     flex-wrap: wrap;
-    margin-left: 20px;
+    margin-left: 0px;
     cursor: pointer;
+    margin-bottom: 20px;
+    margin-right: 10px;
 }
 
 .icones {
@@ -632,14 +666,12 @@ button{
     width: 100%;
 }
 
-    /* Conteneur 1 */
+    /* Conteneur 1 - Hébergements à Marseille */
 
 #conteneur1{
-    background-color: #F2F2F2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 1em;
+    background-color: white;
+    border-radius: 0;
+    max-width: none;
     width: auto;
 }
 
@@ -661,19 +693,20 @@ button{
 }
 
 #flexbox1 > article img{ 
-    width: 220px;
-    height: 100px;
+    width: 100%;
+    height: 118px;
     object-fit: cover;
     border-radius: 1em 1em 0 0;
 }
 
 
-    /* Conteneur 2 */
+    /* Conteneur 2 - Les plus populaires */
 
 #conteneur2{
     background-color: #F2F2F2;
-    border-radius: 1em;
-    padding: 20px 20px 20px 20px;
+    border-radius: 0;
+    width: auto;
+    margin: 0;
 }
 
 #flexbox2{
@@ -691,8 +724,8 @@ button{
 
 #flexbox2 > article{
     background-color: white;
-    width: 290px;
-    height: 125px;
+    width: auto;
+    height: auto;
     padding: 5px;
     margin-bottom: 40px;
     border-radius: 1em;
@@ -701,7 +734,7 @@ button{
 }
 
 #flexbox2 > article img{  
-    width: 100px;
+    width: 110px;
     height: 125px;
     object-fit: cover;
     border-radius: 1em 0 0 1em;
@@ -745,29 +778,30 @@ button{
     align-items: center;
 }
 
+#conteneurbottom > .fas.fa-chart-line{
+    
+}
+
 /* Activités à Marseille */
 
 #activites{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 100%;
+    flex-direction: column;
+    width: auto;
 }
 
 /* Une seule carte */
 
 .column{
-    display: flex;
-    flex-direction: column;
-    max-width: 25%;
+    width: auto;
     padding: 15px;
 }
 
 .blockcolumn > a{
-    display: flex  ;    
-    flex-direction: column;
     box-shadow: 1px 1px 12px rgb(197, 197, 197);
     border-radius: 1em;
+    width: auto;
+    height: auto;
 }
 
 .blockcolumn > a img{
@@ -780,16 +814,11 @@ button{
 /* Deux cartes */
 
 .row{
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    max-width: 25%;
+    width: auto;
     padding: 15px;
 }
 
 .blockrow > a{
-    display: flex  ;    
-    flex-direction: column;
     border-radius: 1em;
     color: black;
     text-decoration: none;
@@ -816,6 +845,7 @@ h5{
     margin : 20px 0 20px 10px;
     font-size: 1em;
 }
+
 /* Footer */
 
 footer{
