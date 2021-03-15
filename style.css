@@ -1,3 +1,7 @@
+/* CSS PAGE */
+
+@media screen and (min-width : 1024px)
+
 body, html{
     margin: 0;
     padding: 0;
@@ -11,32 +15,7 @@ main{
     font-family: "raleway", sans-serif;
 }
 
-h1 h2 h3 h4 h5{
-    font-weight: bolder;
-}
-
-h1{
-    font-size: 1.2em;
-}
-
-h2{
-    font-size: 1em;
-}
-
-h3{
-    font-size: 1.2em;
-}
-
-h4{
-    font-size: 1em;
-}
-
-h5{
-    font-size: 1em;
-}
-
-
-/* Header */
+/* HEADER */
 
 header{
     width: 100%;
@@ -78,9 +57,9 @@ nav li a{
     font-weight: bold;
 }
 
-/* Section Filtres */
+/* SECTION FILTRES */
 
-    /* Formulaire */
+    /* FORMULAIRE */
 
 #formulaire{
     display: flex;
@@ -89,6 +68,7 @@ nav li a{
 }
 
 #recherche > h1{
+    font-size: 1.2em;
     margin-bottom: 0px;
     font-weight: bold;
 }
@@ -130,7 +110,7 @@ button{
     width: 110px;
 }
 
-    /* Filtres */
+    /* FILTRES */
 
 #box_filtres{
     display: flex;
@@ -147,6 +127,10 @@ button{
     align-items: baseline;
     margin-left: 20px;
     cursor: pointer;
+}
+
+#box_filtres h2{
+    font-size: 1em;
 }
 
 .icones {
@@ -214,15 +198,16 @@ button{
 }
 
 
-/* Hébergements à Marseille */
+/* HEBERGEMENTS A MARSEILLE */
 
-    /* Section centre de page */
+    /* SECTION CENTRE DE PAGE */
 
 #centredepage{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .fas.fa-star{
@@ -233,7 +218,12 @@ button{
     color: grey;
 }
 
-    /* Conteneur 1 */
+#centredepage h3{
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+
+    /* CONTENEUR 1 */
 
 #conteneur1{
     background-color: #F2F2F2;
@@ -241,7 +231,6 @@ button{
     flex-direction: column;
     border-radius: 1em;
     max-width: 66%; 
-    padding: 20px 20px 20px 20px;
 }
 
 #flexbox1{
@@ -251,13 +240,9 @@ button{
     justify-content: space-evenly;
 }
 
-.hebergements{
-    padding-left: 30px;
-}
-
 #flexbox1 > article{
     background-color: white;
-    width: 220px;
+    width: 30%;
     height: auto;
     padding: 5px;
     margin-bottom: 40px;
@@ -267,16 +252,10 @@ button{
 }
 
 #flexbox1 > article img{ 
-    width: 210px;
+    width: 100%;
     height: 100px;
     object-fit: cover;
     border-radius: 1em 1em 0 0;
-}
-
-.nom_hotel1{
-    font-size: 1em;
-    font-weight: bolder;
-    margin: 3px 0px 3px 8px;
 }
 
 .clickable {
@@ -285,26 +264,34 @@ button{
 }
 
 .clickable > p{
-    margin: 4px 0px 4px 8px;
+    margin: 4px 0px 4px 5px;
+    font-size: 0.7em;
 }
 
 .etoiles{
-    margin: 4px 0px 4px 8px;
+    margin: 4px 0px 4px 5px;
+    font-size: 0.5em;
 }
 
 #conteneur1 h4{
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-left: 5px;
+    font-size: 0.8em;
 }
 
-    /* Conteneur 2 */
+#conteneur1 h5{
+    font-size: 1em;
+    margin-left: 20px;;
+}
+
+    /* CONTENEUR 2 */
 
 #conteneur2{
     background-color: #F2F2F2;
     border-radius: 1em;
-    padding: 20px 20px 20px 20px;
-    margin-left: 30px;
-    width: 400px;
+    padding: 0px 10px 10px 10px;
+    width: 33%;
 }
 
 #flexbox2{
@@ -322,17 +309,17 @@ button{
 #flexbox2 > article{
     background-color: white;
     width: 320px;
-    height: 125px;
+    height: auto;
     padding: 5px;
-    margin: 10px 10px 40px 10px;
+    margin: 10px 10px 20px 10px;
     border-radius: 1em;
-    max-width: 33,3%;
+    width: auto;
     box-shadow: 1px 1px 12px rgb(197, 197, 197);
 }
 
 #flexbox2 > article img{  
     width: 100px;
-    height: 115px;
+    height: 110px;
     object-fit: cover;
     border-radius: 1em 0 0 1em;
     margin-right: 10px;
@@ -344,8 +331,9 @@ button{
 }
 
 .populaires > h4{
-    font-size: 1em;
-    font-weight: bolder;
+    font-size: 0.8em;
+    display: inline-block;
+    font-weight: bold;
     margin-top: 5px;
     margin-bottom: 1px;
     margin-left: 5px;
@@ -354,36 +342,33 @@ button{
 .populaires > p{
     margin-top: 1px;
     margin-left: 5px;
-    margin-bottom: 30px;
-    font-size: 00.8em;
-}
-
-.nom_hotel2{
-    font-size: 1em;
-    font-weight: bolder;
+    margin-bottom: 45px;
+    font-size: 0.7em;
 }
 
 .etoiles2{
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
+    font-size: 0.5em;
+    margin-left: 5px
 }
 
-#conteneurbottom{
+#conteneurtop{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-#conteneurbottom > .fas.fa-chart-line{
+#conteneurtop > .fas.fa-chart-line{
     font-size: 1.6em;
 }
 
-#conteneurbottom > h3{
+#conteneurtop > h3{
     margin-bottom: 13px;
 }
 
-/* Activités à Marseille */
+/* ACTIVITES A MARSEILLE */
 
 #activites{
     display: flex;
@@ -392,7 +377,7 @@ button{
     max-width: 100%;
 }
 
-/* Une seule carte */
+/* UNE SEULE CARTE */
 
 .column{
     display: flex;
@@ -415,7 +400,7 @@ button{
     border-radius: 1em 1em 0 0;
 }
 
-/* Deux cartes */
+/* DEUX CARTES */
 
 .row{
     display: flex;
@@ -452,10 +437,10 @@ button{
 
 #activites h4{
     margin : 20px 0 20px 10px;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
-/* Footer */
+/* FOOTER */
 
 footer{
     display: flex;
@@ -483,3 +468,109 @@ ul > li{
     margin-bottom: 10px;
 }
 
+
+/* RESOLUTION TABLETTE */
+
+@media screen 
+    and (min-width : 768px) and (max-width : 1023px) 
+{
+    body{
+        width: auto;
+        background-color: red;
+    }  
+
+    main{
+        margin: 20px;
+    }
+
+    header{
+        display: inline-block;
+        flex-direction: ;
+    }
+
+    #menu{
+        margin-top: 15px;
+    }
+
+    #box_filtres > h2{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .filtres{
+        margin-left: 0px;
+        margin-right: 4px;
+    }
+
+    h3{
+        font-size: 1em;
+    }
+
+    #conteneur1{
+        max-width: 60%; 
+    }
+
+    #flexbox1{
+        justify-content: space-around;
+    }
+
+    #flexbox1 > article{
+        justify-content: space-evenly;
+        width: 195px;
+        height: auto;
+        padding: 5px;
+        margin-bottom: 40px;
+        border-radius: 1em;
+        max-width: 50%;
+        box-shadow: 1px 1px 12px rgb(197, 197, 197);
+    }
+
+    #flexbox1 > article img{ 
+        width: 185px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 1em 1em 0 0;
+    }
+
+    #conteneurbottom{
+        justify-content: space-around;
+    }
+
+    #conteneurbottom > h3{
+        margin-bottom: 16px;
+    }
+
+    #conteneurbottom > .fas.fa-chart-line{
+        font-size: 1.2em;
+    }
+
+    #conteneur2{
+        padding:20px 0px 0px 0px;
+        margin-left: 20px;
+        width: 40%; 
+    }
+
+    .clickable2{
+        flex-direction: column;
+    }
+    
+    #flexbox2 > article{
+        width: auto;
+        height: 180px;
+        padding: 5px;
+        margin: 0px 20px 30px 20px;
+        border-radius: 1em;
+        box-shadow: 1px 1px 12px rgb(197, 197, 197);
+    }
+    
+    #flexbox2 > article img{  
+        width: auto;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 1em 1em 0 0;
+        margin-right: 10px;
+    }
+
+
+
+}
