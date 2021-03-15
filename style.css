@@ -1,15 +1,16 @@
 /* CSS PAGE */
 
-@media screen and (min-width : 1024px)
+@media screen and (min-width : 1024px) and (max-width : 2559px)
 
 body, html{
-    margin: 0;
-    padding: 0;
-
+    margin: 0px;
+    padding: 0px;
 }
+
 body *{
     box-sizing: border-box;
 }
+
 main{
     margin: 30px;
     font-family: "raleway", sans-serif;
@@ -186,7 +187,7 @@ button{
     height: 20px;
     display: flex;
     justify-content: center;
-    align-items:center
+    align-items: center
 }
 
 #petite_phrase{
@@ -282,7 +283,7 @@ button{
 
 #conteneur1 h5{
     font-size: 1em;
-    margin-left: 20px;;
+    margin-left: 20px;
 }
 
     /* CONTENEUR 2 */
@@ -350,14 +351,14 @@ button{
     margin-top: 5px;
     margin-bottom: 2px;
     font-size: 0.5em;
-    margin-left: 5px
+    margin-left: 5px;
 }
 
 #conteneurtop{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row; 
+    align-items: baseline;
+    justify-content: space-around;
 }
 
 #conteneurtop > .fas.fa-chart-line{
@@ -366,6 +367,7 @@ button{
 
 #conteneurtop > h3{
     margin-bottom: 13px;
+    margin-left: 0px;
 }
 
 /* ACTIVITES A MARSEILLE */
@@ -483,14 +485,17 @@ ul > li{
         margin: 20px;
     }
 
+    /* HEADER */
+
     header{
         display: inline-block;
-        flex-direction: ;
     }
 
     #menu{
         margin-top: 15px;
     }
+
+    /* SECTION FILTRES */
 
     #box_filtres > h2{
         display: inline-block;
@@ -499,12 +504,18 @@ ul > li{
 
     .filtres{
         margin-left: 0px;
-        margin-right: 4px;
+        margin-right: 8px;
     }
 
     h3{
         font-size: 1em;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
+
+    /* HEBERGEMENTS A MARSEILLE */
+
+    /* CONTENEUR 1 */
 
     #conteneur1{
         max-width: 60%; 
@@ -516,38 +527,43 @@ ul > li{
 
     #flexbox1 > article{
         justify-content: space-evenly;
-        width: 195px;
+        width: 230px;
         height: auto;
         padding: 5px;
         margin-bottom: 40px;
         border-radius: 1em;
-        max-width: 50%;
+        max-width: 45%;
         box-shadow: 1px 1px 12px rgb(197, 197, 197);
     }
 
     #flexbox1 > article img{ 
-        width: 185px;
+        width: 100%;
         height: 100px;
         object-fit: cover;
         border-radius: 1em 1em 0 0;
     }
 
-    #conteneurbottom{
-        justify-content: space-around;
+    /* CONTENEUR 2 */
+
+    #conteneurtop{
+        justify-content: space-between;
     }
 
-    #conteneurbottom > h3{
-        margin-bottom: 16px;
+    #conteneurtop > h3{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
     }
 
-    #conteneurbottom > .fas.fa-chart-line{
+    #conteneurtop > .fas.fa-chart-line{
         font-size: 1.2em;
+        margin-right: 25px;
     }
 
     #conteneur2{
-        padding:20px 0px 0px 0px;
+        padding:0px 0px 0px 0px;
         margin-left: 20px;
-        width: 40%; 
+        width: 45%; 
     }
 
     .clickable2{
@@ -556,21 +572,38 @@ ul > li{
     
     #flexbox2 > article{
         width: auto;
-        height: 180px;
+        height: 170px;
         padding: 5px;
-        margin: 0px 20px 30px 20px;
+        margin: 0px 20px 40px 20px;
         border-radius: 1em;
         box-shadow: 1px 1px 12px rgb(197, 197, 197);
     }
     
     #flexbox2 > article img{  
-        width: auto;
-        height: 80px;
+        width: 100%;
+        height: 90px;
         object-fit: cover;
         border-radius: 1em 1em 0 0;
         margin-right: 10px;
     }
 
+    .populaires > p{
+        margin-top: 3px;
+        margin-left: 5px;
+        margin-bottom: 3px;
+        font-size: 0.7em;
+    }
 
+    .etoiles2{
+        margin-top: 3px;
+    }
+
+    #activites h4{
+        margin : 10px 0 10px 10px;
+        font-size: 0.8em;
+    }
+
+    .blockcolumn > a img{
+        height: 290px;
 
 }
