@@ -606,7 +606,7 @@
 
         #activites h4{
             margin : 10px 0 10px 10px;
-            font-size: 0.8em;
+            font-size: 0.7em;
         }
 
         .blockcolumn > a img{
@@ -614,6 +614,14 @@
         }
 
     /* ACTIVITES A MARSEILLE */
+
+        .column{
+            padding: 10px;
+        }
+
+        .row{
+            padding: 10px;
+        }
 
         .blockcolumn > a{
             height: 340px;
@@ -631,7 +639,7 @@
 
         .blockrow > .clickable3 img{
             width: 100%;
-            height: 100px;
+            height: 115px;
         }
 
         .blockrow > .clickable4 img{
