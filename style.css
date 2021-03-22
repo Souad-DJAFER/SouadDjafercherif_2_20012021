@@ -649,7 +649,7 @@
     
         main{
             margin: 0px;
-            padding: 10px;
+            padding: 0px;
         }
 
         /* HEADER */
@@ -665,7 +665,7 @@
             order: -2;
             width: 50%;
             margin-left: 0px;
-            padding-left: 10px;
+            padding-left: 15px;
         }
 
         ul > li.nav2{
@@ -681,7 +681,7 @@
             width: 50%;
             text-align: right;
             padding-top: 15px;
-            padding-right: 10px;
+            padding-right: 15px;
         }
 
         ul > li.blueline{
@@ -729,7 +729,7 @@
         }
 
 
-        .rechercher{
+        #rechercher{
             display: none;
         }
 
@@ -784,6 +784,7 @@
             display: flex;
             flex-direction: column-reverse;
             max-width: none;
+            padding: 0 10px 0 10px;
         }
 
         #centredepage h3{
@@ -894,6 +895,7 @@
         #activites{
             flex-direction: column;
             max-width: 100%;
+            padding: 0 10px 0 10px;
         }
             
         #h3_activites{
