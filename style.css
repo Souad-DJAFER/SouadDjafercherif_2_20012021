@@ -113,6 +113,10 @@
         width: 110px;
     }
 
+    .fas.fa-search{
+        display: none;
+    }
+
         /* FILTRES */
 
     #box_filtres{
@@ -321,7 +325,7 @@
 
     #flexbox2 > article img{  
         width: 100px;
-        height: 110px;
+        height: 115px;
         object-fit: cover;
         border-radius: 1em 0 0 1em;
         margin-right: 10px;
@@ -718,11 +722,19 @@
         button{
             color: white;
             background-color: #0065FC;
-            border-radius: 0 1em 1em 0;
-            border-style: none;
-            margin-left: 0;
+            border-radius: 1em;
+            margin-left: -10px;
             height: 40px;
-            width: 110px;
+            width: 40px;
+        }
+
+
+        .rechercher{
+            display: none;
+        }
+
+        .fas.fa-search{
+            display: inline;
         }
     
         /* FILTRES */
