@@ -136,6 +136,10 @@
         cursor: pointer;
     }
 
+    .icones > p:hover{
+        color: #0065FC;
+    }
+
     #box_filtres h2{
         font-size: 1em;
     }
@@ -483,7 +487,7 @@
     {
         body{
             width: auto;
-            background-color: red;
+            background-color: #DEEBFF;
         }  
 
         main{
