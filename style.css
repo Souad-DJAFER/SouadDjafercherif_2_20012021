@@ -60,7 +60,7 @@
         font-weight: bold;
     }
 
-    /* SECTION FILTRES */
+    /* SECTION 1 - FILTRES */
 
         /* FORMULAIRE */
 
@@ -206,7 +206,7 @@
 
     /* HEBERGEMENTS A MARSEILLE */
 
-        /* SECTION CENTRE DE PAGE */
+        /* SECTION 2 - CENTRE DE PAGE */
 
     #centredepage{
         display: flex;
@@ -229,7 +229,7 @@
         margin-left: 20px;
     }
 
-        /* CONTENEUR 1 */
+        /* CONTENEUR 1 - HEBERGEMENTS */
 
     #conteneur1{
         background-color: #F2F2F2;
@@ -290,7 +290,7 @@
         margin-left: 20px;
     }
 
-        /* CONTENEUR 2 */
+        /* CONTENEUR 2 - PLUS POPULAIRES */
 
     #conteneur2{
         background-color: #F2F2F2;
@@ -374,7 +374,7 @@
         margin-left: 0px;
     }
 
-    /* ACTIVITES A MARSEILLE */
+    /* SECTION 3 - ACTIVITES A MARSEILLE */
 
     #activites{
         display: flex;
@@ -500,7 +500,7 @@
             margin-top: 15px;
         }
 
-        /* SECTION FILTRES */
+    /* SECTION 1 - FILTRES */
 
         #box_filtres > h2{
             display: inline-block;
@@ -518,9 +518,9 @@
             margin-bottom: 20px;
         }
 
-    /* HEBERGEMENTS A MARSEILLE */
+    /* SECTION 2 - HEBERGEMENTS A MARSEILLE */
 
-        /* CONTENEUR 1 */
+        /* CONTENEUR 1 - HEBERGEMENTS */
 
         #conteneur1{
             max-width: 60%; 
@@ -548,7 +548,7 @@
             border-radius: 1em 1em 0 0;
         }
 
-        /* CONTENEUR 2 */
+        /* CONTENEUR 2 - PLUS POPULAIRES */
 
         #conteneurtop{
             justify-content: space-between;
@@ -612,7 +612,7 @@
             height: 290px;
         }
 
-    /* ACTIVITES A MARSEILLE */
+    /* SECTION 3 - ACTIVITES A MARSEILLE */
 
         .column{
             padding: 10px;
@@ -659,7 +659,7 @@
             padding: 0px;
         }
 
-        /* HEADER */
+    /* HEADER */
 
         ul{
             display: flex;
@@ -695,7 +695,7 @@
             border-bottom: 2px #0065FC solid;
         }
 
-    /* SECTION FILTRES */
+    /* SECTION 1 - FILTRES */
 
         #recherche{
             padding: 10px;
@@ -787,9 +787,9 @@
         }
     
 
-    /* HEBERGEMENTS A MARSEILLE */
+    /* SECTION 2 - HEBERGEMENTS A MARSEILLE */
 
-        /* SECTION CENTRE DE PAGE */
+        /* CENTRE DE PAGE */
 
         #centredepage{
             display: flex;
@@ -802,7 +802,7 @@
             margin-left: 10px;
         }
 
-        /* CONTENEUR 1 */
+        /* CONTENEUR 1 - HERBERGEMENTS */
 
         #conteneur1{
             background-color: white;
@@ -858,7 +858,7 @@
             margin-left: 10px;
         }
 
-        /* CONTENEUR 2 */
+        /* CONTENEUR 2 - PLUS POPULAIRES */
 
         #conteneurtop{
             justify-content: space-between;
@@ -900,7 +900,7 @@
             margin-right: 10px;
         }
 
-    /* ACTIVITES A MARSEILLE */
+    /* SECTION 3 - ACTIVITES A MARSEILLE */
 
         #activites{
             flex-direction: column;
