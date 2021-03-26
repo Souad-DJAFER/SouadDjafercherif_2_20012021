@@ -384,7 +384,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        max-width: 100%;
+        width: 100%;
     }
 
         /* UNE SEULE CARTE */
@@ -392,7 +392,7 @@
     .column{
         display: flex;
         flex-direction: column;
-        max-width: 25%;
+        width: 25%;
         padding: 15px;
     }
 
@@ -416,7 +416,7 @@
         display: flex;
         flex-direction: column;
         align-content: flex-start;
-        max-width: 25%;
+        width: 25%;
         padding: 15px;
     }
 
@@ -918,7 +918,7 @@
         /* UNE SEULE CARTE */
 
         .column{
-            max-width: 100%;
+            width: 100%;
             padding: 0;
         }
 
@@ -936,7 +936,7 @@
         /* DEUX CARTES */
 
         .row{
-            max-width: 100%;
+            width: 100%;
             padding: 0px;
         }
 
