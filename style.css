@@ -12,6 +12,7 @@
     main{
         margin: 30px;
         font-family: "raleway", sans-serif;
+        margin-top: 0px;
     }
 
     /* HEADER */
@@ -32,6 +33,7 @@
         padding: 0;
         width: 100%;
         justify-content: space-between;
+        margin-top: 0px;
     }
 
     #menu{
@@ -41,10 +43,27 @@
 
     .nav1{
         flex: 1 1;
+        padding-top: 30px;
     }
     
     .nav2{
         margin-right: 50px;
+        padding-top: 30px;
+    }
+
+    .nav2.blueline a:hover{
+        color: #0065FC;
+    }
+
+    .nav2.blueline:hover{
+        border-top: 2px #0065FC solid;
+        padding: 30px 20px 10px 20px;
+        padding-left: 30px;
+        margin-right: 30px;
+    }
+
+    .nav3{
+        padding-top: 30px;
     }
 
     nav li a{
@@ -167,7 +186,7 @@
 
     .icones > p {
         color: black;
-        font-weight: bolder;
+        font-weight: bold;
         border-radius: 0 1px 1px 0;
         display: flex;
         flex-direction: row;
@@ -255,7 +274,7 @@
         width: 30%;
         height: auto;
         padding: 5px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         border-radius: 1em;
         box-shadow: 1px 1px 12px rgb(197, 197, 197);
     }
@@ -291,7 +310,7 @@
 
     #conteneur1 h5{
         font-size: 1em;
-        margin-left: 20px;
+        margin: 5px 0px 10px 20px;
     }
 
         /* CONTENEUR 2 - PLUS POPULAIRES */
@@ -694,8 +713,10 @@
             padding-right: 15px;
         }
 
-        ul > li.blueline{
+        .nav2.blueline:hover{
+            border-top: 0;
             border-bottom: 2px #0065FC solid;
+            margin-right: 0;
         }
 
     /* SECTION 1 - FILTRES */
@@ -705,7 +726,7 @@
         }        
 
         #recherche > h1{
-        font-size: 1.4em;
+            font-size: 1.4em;
         }
 
         /* FORMULAIRE */
